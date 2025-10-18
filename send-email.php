@@ -7,16 +7,16 @@
 
 // COMENTÁRIO: Configurações de segurança
 header('Content-Type: application/json');
-//header('Access-Control-Allow-Origin: https://seusite.com'); //modificar e colocar meu domínio
-header('Access-Control-Allow-Origin: *');
+//header('Access-Control-Allow-Origin: https://diezare.github.io/mkt/'); //modificar e colocar meu domínio
+//header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
 // COMENTÁRIO: Permitir apenas origens específicas (substitua pelo seu domínio)
-/*$allowed_origins = ['https://seusite.com'];
+$allowed_origins = ['https://diezare.github.io/mkt/'];
 if (in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
     header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
-}*/
+}
 
 
 // Verifica se é uma requisição POST
