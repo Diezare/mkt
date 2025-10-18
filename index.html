@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital Pro - Soluções Completas para o Seu Negócio</title>
+    <meta name="description" content="Agência de marketing digital especializada em websites, landing pages, identidade visual, gestão de mídias sociais e automação WhatsApp.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">Marketing Digital Pro</a>
+            
+            <nav class="nav-desktop" id="navDesktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+
+            </nav>
+            
+            <div class="header-actions">
+                <!-- COMENTÁRIO: Botão de Contato visível apenas em desktop. Removido em mobile pois já está no menu. -->
+                <a href="#contato" class="btn btn-primary btn-desktop-only">Contato</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i data-lucide="sun" class="icon-sun"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- COMENTÁRIO: Menu Mobile - desliza da direita para a esquerda -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                <i data-lucide="x"></i>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#quem-somos" class="mobile-nav-link">Quem Somos</a>
+                <a href="#servicos" class="mobile-nav-link">Serviços</a>
+                <a href="#contato" class="mobile-nav-link">Contato</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- COMENTÁRIO: Seção principal com vídeo de fundo do YouTube -->
+    <!-- COMENTÁRIO: Para trocar o vídeo, altere o ID do vídeo na URL do iframe abaixo -->
+    <!-- COMENTÁRIO: ID atual: hrs0_uY6pzk - substitua por outro ID do YouTube -->
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <iframe 
+                class="video-iframe"
+                src="https://www.youtube.com/embed/hrs0_uY6pzk?autoplay=1&mute=1&loop=1&playlist=hrs0_uY6pzk&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text-animated">Transforme Seu Negócio</span><br>
+                com Marketing Digital
+            </h1>
+            <p class="hero-description">
+                Criamos experiências digitais que conectam sua marca ao público certo, através de estratégias personalizadas e soluções inovadoras que geram resultados reais.
+            </p>
+            <div class="hero-buttons">
+                <a href="#servicos" class="btn btn-primary btn-lg">
+                    Conheça Nossos Serviços
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#contato" class="btn btn-secondary btn-lg">
+                    Fale Conosco
+                    <i data-lucide="message-circle"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number">2025</h3>
+                    <p class="stat-label">Desde 2020 transformando negócios através do marketing digital</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">500+</h3>
+                    <p class="stat-label">Mais de 500 projetos entregues com sucesso</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">98%</h3>
+                    <p class="stat-label">Taxa de satisfação dos nossos clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos Section -->
+    <section id="quem-somos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quem Somos</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos uma agência de marketing digital especializada em criar soluções completas para empresas que desejam crescer e se destacar no ambiente digital. Nossa missão é transformar ideias em realidade, utilizando as melhores ferramentas e estratégias do mercado.</p>
+                    <p>Com uma equipe experiente e apaixonada por inovação, trabalhamos lado a lado com nossos clientes para entender suas necessidades e entregar resultados que superam expectativas. Acreditamos que o sucesso do seu negócio é o nosso sucesso.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/imgs/team-collaboration.jpg" alt="Equipe colaborando">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Conheça as soluções que podem transformar sua presença digital e impulsionar seus resultados</p>
+            </div>
+            <div class="services-grid">
+                <!-- Serviço 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="service-title">Website Institucional</h3>
+                    <p class="service-description">Desenvolvemos sites profissionais, responsivos e otimizados para SEO, que representam sua marca e geram resultados concretos para o seu negócio.</p>
+                    <button class="btn btn-outline" onclick="openModal('modal1')">
+                        Saiba mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3 class="service-title">Landing Page</h3>
+                    <p class="service-description">Criamos páginas de alta conversão, focadas em objetivos específicos de marketing, como captação de leads qualificados ou aumento de vendas.</p>
+                    <button class="btn btn-outline" onclick="openModal('modal2')">
+                        Saiba mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3 class="service-title">Identidade Visual</h3>
+                    <p class="service-description">Desenvolvemos ou reformulamos logotipos, paletas de cores, tipografia e elementos visuais que definem e fortalecem sua marca no mercado.</p>
+                    <button class="btn btn-outline" onclick="openModal('modal3')">
+                        Saiba mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="service-title">Gestão de Mídias Sociais</h3>
+                    <p class="service-description">Oferecemos orientação e estratégias completas para criação de conteúdo relevante, agendamento de postagens e engajamento nas principais plataformas.</p>
+                    <button class="btn btn-outline" onclick="openModal('modal4')">
+                        Saiba mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3 class="service-title">Automação WhatsApp</h3>
+                    <p class="service-description">Implementamos soluções de chatbot inteligentes para atendimento ao cliente, qualificação de leads e automação de vendas via WhatsApp.</p>
+                    <button class="btn btn-outline" onclick="openModal('modal5')">
+                        Saiba mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="megaphone"></i>
+                    </div>
+                    <h3 class="service-title">Campanhas Publicitárias</h3>
+                    <p class="service-description">Criamos e gerenciamos campanhas de anúncios pagos em Google Ads, Facebook Ads e Instagram Ads para maximizar seu ROI e alcançar seu público-alvo.</p>
+                    <button class="btn btn-outline" onclick="openModal('modal6')">
+                        Saiba mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos prontos para ajudar seu negócio a crescer. Entre em contato conosco!</p>
+            </div>
+            <div class="contact-grid">
+                <!-- Informações de Contato -->
+                <div class="contact-info">
+                    <h3>Fale Conosco</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <a href="mailto:contato@marketingdigitalpro.com">contato@marketingdigitalpro.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <a href="tel:+5543999999999">+55 (43) 99999-9999</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5543999999999" target="_blank">Fale conosco agora</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="#" target="_blank" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" target="_blank" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" target="_blank" aria-label="YouTube">
+                                <i data-lucide="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="contact-form-wrapper">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Enviar Mensagem
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Marketing Digital Pro</h3>
+                    <p>&copy; <span id="currentYear"></span> Marketing Digital Pro - Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <button class="link-button" onclick="openModal('privacyModal')">Política de Privacidade</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COMENTÁRIO: Botão de voltar ao topo -->
+    <!-- COMENTÁRIO: Para ajustar a posição, edite as propriedades bottom e right no CSS -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Voltar ao topo">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Modals -->
+    <!-- Modal 1 - Website Institucional -->
+    <div class="modal" id="modal1">
+        <div class="modal-overlay" onclick="closeModal('modal1')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('modal1')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Website Institucional</h2>
+            <p>Nosso serviço de desenvolvimento de websites institucionais oferece soluções completas e personalizadas para empresas que desejam estabelecer uma presença digital profissional. Criamos sites responsivos que se adaptam perfeitamente a todos os dispositivos, desde smartphones até desktops. Cada projeto é otimizado para mecanismos de busca (SEO), garantindo melhor visibilidade online. Utilizamos as tecnologias mais modernas e seguimos as melhores práticas de desenvolvimento web, incluindo tempos de carregamento rápidos, navegação intuitiva e design atraente que reflete a identidade da sua marca.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Landing Page -->
+    <div class="modal" id="modal2">
+        <div class="modal-overlay" onclick="closeModal('modal2')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('modal2')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Landing Page</h2>
+            <p>Desenvolvemos landing pages estratégicas focadas em conversão, projetadas especificamente para campanhas de marketing digital. Cada página é cuidadosamente planejada para guiar o visitante através de uma jornada clara e persuasiva, com chamadas para ação (CTAs) estrategicamente posicionadas. Implementamos formulários otimizados para captação de leads, integrações com ferramentas de automação de marketing e análise de métricas em tempo real. Nosso processo inclui testes A/B para maximizar as taxas de conversão e garantir o melhor retorno sobre o investimento em suas campanhas publicitárias.</p>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Identidade Visual -->
+    <div class="modal" id="modal3">
+        <div class="modal-overlay" onclick="closeModal('modal3')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('modal3')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Identidade Visual</h2>
+            <p>Criamos identidades visuais completas que capturam a essência da sua marca e a diferenciam no mercado. Nosso processo começa com uma análise profunda do seu negócio, público-alvo e concorrência. Desenvolvemos logotipos únicos e memoráveis, definimos paletas de cores estratégicas baseadas em psicologia das cores, selecionamos tipografias que comunicam a personalidade da marca e criamos um manual de identidade visual completo. Este manual inclui diretrizes de uso, variações do logotipo, aplicações em diferentes materiais e exemplos de implementação, garantindo consistência em todos os pontos de contato com seu público.</p>
+        </div>
+    </div>
+
+    <!-- Modal 4 - Gestão de Mídias Sociais -->
+    <div class="modal" id="modal4">
+        <div class="modal-overlay" onclick="closeModal('modal4')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('modal4')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Gestão de Mídias Sociais</h2>
+            <p>Oferecemos consultoria especializada em gestão de mídias sociais, fornecendo estratégias personalizadas para aumentar o engajamento e fortalecer a presença da sua marca nas plataformas digitais. Desenvolvemos calendários editoriais estratégicos, criamos diretrizes para produção de conteúdo relevante e autêntico, e fornecemos orientações sobre as melhores práticas para cada plataforma (Instagram, Facebook, LinkedIn, TikTok). Incluímos análise de métricas e relatórios de desempenho, sugestões de hashtags estratégicas, orientações sobre timing de postagens e técnicas para aumentar o alcance orgânico e construir uma comunidade engajada em torno da sua marca.</p>
+        </div>
+    </div>
+
+    <!-- Modal 5 - Automação WhatsApp -->
+    <div class="modal" id="modal5">
+        <div class="modal-overlay" onclick="closeModal('modal5')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('modal5')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Automação WhatsApp</h2>
+            <p>Implementamos soluções avançadas de automação para WhatsApp que transformam a forma como sua empresa se comunica com clientes. Desenvolvemos chatbots inteligentes capazes de responder perguntas frequentes, qualificar leads automaticamente, agendar compromissos e até processar pedidos. Nossas soluções incluem integração com CRM, fluxos de conversa personalizados, respostas automáticas fora do horário comercial e transferência inteligente para atendimento humano quando necessário. Tudo isso mantendo um tom de conversa natural e humanizado, melhorando a experiência do cliente enquanto otimiza os recursos da sua equipe de atendimento.</p>
+        </div>
+    </div>
+
+    <!-- Modal 6 - Campanhas Publicitárias -->
+    <div class="modal" id="modal6">
+        <div class="modal-overlay" onclick="closeModal('modal6')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('modal6')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Campanhas Publicitárias</h2>
+            <p>Gerenciamos campanhas publicitárias completas nas principais plataformas de anúncios digitais. Nosso serviço inclui pesquisa de palavras-chave, criação de anúncios persuasivos, segmentação precisa de público-alvo, definição de orçamentos estratégicos e otimização contínua para maximizar o retorno sobre investimento (ROI). Trabalhamos com Google Ads (rede de pesquisa e display), Facebook Ads, Instagram Ads e outras plataformas relevantes para o seu negócio. Fornecemos relatórios detalhados com métricas de desempenho, análise de conversões e recomendações estratégicas para melhorar continuamente os resultados das suas campanhas.</p>
+        </div>
+    </div>
+
+    <!-- Modal - Política de Privacidade -->
+    <div class="modal" id="privacyModal">
+        <div class="modal-overlay" onclick="closeModal('privacyModal')"></div>
+        <div class="modal-content modal-custom">
+            <button class="modal-close" onclick="closeModal('privacyModal')" aria-label="Fechar">
+                <i data-lucide="x"></i>
+            </button>
+            <h2>Política de Privacidade</h2>
+            <p>A sua privacidade é importante para nós. É política da Marketing Digital Pro respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Marketing Digital Pro.</p>
+            <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+            <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+            <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+            <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</p>
+            <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</p>
+            <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto conosco.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
