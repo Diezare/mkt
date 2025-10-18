@@ -909,3 +909,11 @@ body.dark-mode .video-overlay {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+  .header-content {
+    align-items: center;
+    gap: 1rem; /* espaçamento entre os itens */
+    padding: 1rem;
+  }
+}
